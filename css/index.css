@@ -1,0 +1,508 @@
+@media screen and (min-width:800px) {
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    position: fixed;
+    width: 100%;
+}
+.sidebar 
+{
+    display: none;
+}
+.navbar 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1d8179;
+    color: whitesmoke;
+}
+.navbar ul
+{
+    display: flex;
+    margin: 0 0 0 0;
+    list-style-type: none;
+    font-size: 20px;
+    
+}
+.navbar li a
+{
+    margin: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0 10px;
+    /* font-weight: 700; */
+}
+.navbar li a:hover
+{
+    color: black;
+    font-weight: 700;
+}
+h1 
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 20px 0 50px;
+}
+
+/********JOMBOTRON STYLING**********/
+.jombo {
+    background:url(../image/laptop-in-a-dark-room2.jpg);
+    background-size: 100% 700px;
+    background-repeat: no-repeat;
+    color: aqua;
+    height: 500px;
+    padding: 110px 0 100px 0;
+}
+.jombo1
+{
+    padding: 100px;
+}
+.jombo h1
+{
+    font-size: xx-large;
+    font-weight: bold;
+    color: aliceblue;
+}
+.jombo h3
+{
+    padding: 20px 20px;
+}
+button {
+    padding: 10px 10px;
+    margin: 70px 0 0 120px;
+    background: transparent;
+    border: 3px solid #1d8179;
+    box-shadow:5px solid #1d8179;
+    cursor: pointer;
+    font-weight: bold;
+}
+button a 
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
+button:hover
+{
+    background-color: #1d8179;
+}
+
+/********* DESCRIPTION STYLING *********/
+.Description 
+{
+    display: flex;
+    align-items: none;
+    justify-content: space-between;
+    padding: 20px;
+}
+ .Description1
+{
+    padding: 0 50px 0 0;
+}
+.Description1 h1
+{
+    padding: 0 0 20px 0;
+    margin: 0 0 0 0;
+    text-align: center;
+}
+.Description2
+{
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+.Description2 h1
+{
+    padding: 0 0% 0 40%;
+    margin: 0;
+    font-weight: bold;
+}
+.Description2 hr
+{
+    padding: 0 0 0 0;
+    margin: 0 80px 0 110px;
+    background-color: red;
+    width: 100px;
+}
+.Description2 ul li
+{
+    padding: 0 0 0 0;
+    margin: 10px 0px;
+    width: 300px;
+    font-weight: bold;
+}
+.Description2 ul li progress
+{
+    padding: 0 0 0 0;
+    margin: 0;
+    background-color: red;
+    width: 300px;
+}
+
+/******** FOOTER STYLING ********/
+footer 
+{
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+}
+.footerli
+{
+    display: flex;
+    justify-content: space-between;
+}
+.footli1 {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0 30% 0 0;
+}
+.footerli ul
+{
+    padding: 20px;
+    list-style: none;
+}
+.footerli ul li
+{
+    padding: 10px;
+}
+/* .footli2
+{
+    
+} */
+.footerli ul li a
+{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.footerli ul li a:hover
+{
+    color: aqua;
+    text-decoration: none;
+}
+footer p
+{
+    color: white;
+    text-align: center;
+}
+
+}
+
+
+/********* MOBILE DESIGN BEGINS ***********/
+@media screen and (max-width: 800px){
+    
+*{
+    margin: 0;
+    padding: 0;
+}
+/*header {
+    background-image: url(image/pexels-rodnae-productions-6646917.jpg);
+
+}*/
+header {
+    position: fixed;
+    padding: 0%;
+    width: 100%;
+}
+
+/******** SIDEBAR MOBILE STYLING *********/
+.sidebar {
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    width: 80%;
+    left: -84%;
+   /* transform: translate(0, -50);*/
+    background-color: black;
+    transition: all 500ms ease;
+    padding: 5px;
+    /*overflow: scroll;*/
+}
+.sidebar.active {
+    left: 0%;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar li a{
+    display: block;
+    color: #1d8179;
+    font-size: 25px;
+    padding: 30px;
+    /* border-bottom: 1px solid gray; */
+    text-align: center;   
+    text-decoration: none;
+  /*  transition: all 500ms ease;*/
+}
+.sidebar li a:hover {
+    color: aqua;
+    font-weight: bold;
+}
+.toggle-btn {
+    position: absolute;
+    left: 105%;
+    top:10px;
+
+}
+.toggle-btn span{
+    width: 30px; 
+    height:3px; 
+    background-color: black;
+    margin: 5px;
+    display: block;
+    cursor:pointer;
+
+}
+.sidebar form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+.sidebar .search {
+    width: 150px;
+    height: 50px;
+    background-color: gray;
+    font-size: 20px;
+}
+.sidebar button {
+    margin: 0px 0px 0px 10px;
+    width: 80px;
+    height: 50px;
+    background-color:#1d8179;
+    font-size: 13px;
+    cursor: pointer;
+}
+.sidebar button:hover
+{
+    background-color: rgb(57, 173, 173);
+    font-weight: bold;
+}
+input::placeholder {
+    color: #000000;
+}
+
+/******** NAVBAR MOBILE STYLING ********/
+.navbar {
+    /* width: 100%; */
+    margin: 0;
+    background-color: #1d8179;
+    padding: 10px 50px 10px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    height: 40px;
+}
+.navbar h1 {
+    margin: 0;
+    font-size: 20px;
+}
+.navbar ul {
+    display: none;
+}
+
+/****JOMBOTRON MOBILE STYLING******/
+.jombo {
+    background:url(../image/laptop-in-a-dark-room2.jpg);
+    background-size: 100% 690px;
+    background-repeat: no-repeat;
+    color: aqua;
+    height: 450px;
+    padding: 110px 20px 100px 20px;
+}
+.jombo1
+{
+    padding: 50px 0px;
+    display: block;
+    
+}
+.jombo h1
+{
+    font-size: xx-large;
+    color: aliceblue;
+    text-align: left;
+    padding: 40px 20px 10px 20px;
+}
+.jombo h3
+{
+    padding: 10px 20px;
+    text-align: left;
+}
+button {
+    padding: 10px 10px;
+    margin: 90px 0 0 15px;
+    background: transparent;
+    color: whitesmoke;
+    border: 3px solid #1d8179;
+    box-shadow:5px solid #1d8179;
+    cursor: pointer;
+    font-weight: bold;
+}
+button a 
+{
+    text-decoration: none;
+    color: whitesmoke;
+}
+button:hover
+{
+    background-color: #1d8179;
+}
+
+/********* ABOUT MOBILE STYLING **********/
+.About
+{
+    padding: 20px 20px 0px 20px;
+}
+.About h1 {
+    font-size: 30px;
+    text-align: center;
+}
+.About p
+{
+    padding: 10px 0;
+}
+
+/********* DESCRIPTION MOBILE STYLING *********/
+.Description 
+{
+    display: block;
+
+    padding: 10px 20px 20px 20px;
+}
+ .Description1
+{
+    padding: 20px 10px;
+}
+.Description1 h1
+{
+    padding: 0 0 20px 0;
+    margin: 0 0 0 0;
+    text-align: center;
+}
+.Description2
+{
+    padding: 0;
+    margin: 0;
+}
+.Description2 h1
+{
+    padding: 0 0% 0 40%;
+    margin: 0;
+    font-weight: bold;
+}
+.Description2 hr
+{
+    padding: 0;
+    margin: 0 100px 0 165px;
+    background-color: red;
+    width: 120px;
+}
+.Description2 ul
+{
+    padding: 20px;
+}
+.Description2 ul li
+{
+    padding: 0 0 0 0;
+    margin: 10px 0px;
+    width: 300px;
+    font-weight: bold;
+}
+.Description2 ul li progress
+{
+    padding: 0 0 0 0;
+    margin: 0;
+    background-color: red;
+    width: 300px;
+    /* color: #077c72; */
+}
+
+/******** FOOTER MOBILE STYLING **********/
+footer 
+{
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+}
+footer form
+{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+footer form h3
+{
+    color: aqua;
+}
+footer form input
+{
+    margin: 10px 100px;
+    padding: 10px;
+    background-color: #161515;
+    color: aliceblue;
+    border-radius: 5px;
+}
+footer form input::placeholder
+{
+    color: gray;
+    margin-top: 0;
+}
+footer form .message
+{
+    width: 100%;
+    height: 200px;
+    padding: 0;
+    background-color: #161515;
+    color: aliceblue;
+    /* font-size: 15px; */
+}
+footer form .submit:hover {
+    background-color: #1d8179;
+    cursor: pointer;
+}
+.footerli
+{
+    display: flex;
+    justify-content: space-around;
+}
+.footerli ul
+{
+    padding: 20px;
+    list-style: none;
+}
+.footerli ul li
+{
+    padding: 10px;
+}
+.footerli ul li a
+{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.footerli ul li a:hover
+{
+    color: aqua;
+    font-weight: bold;
+}
+footer p
+{
+    color: white;
+    text-align: center;
+    padding: 20px 0 10px 0;
+    font-size: small;
+}
+
+}
+
