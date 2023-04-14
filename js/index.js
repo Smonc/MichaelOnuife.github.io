@@ -19,6 +19,23 @@ function togglemenu() {
     sidebar.classList.toggle('active');
 }
 
+window.onscroll = function (){
+    scrollFunction();
+}
+
+function scrollFunction () {
+    var navbar = document.getElementsByClassName("navbar")[0];
+    var togglebtn = document.getElementsByClassName(".toggle-btn span")[0];
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    navbar.classList.add("scrolled");
+    togglebtn.classList.add("scrolle");
+    }
+    else {
+        navbar.classList.remove("scrolled");
+        togglebtn.classList.remove("scrolle");
+    }
+}
+
 /*function togglemenu() {
     var sidebar = document.getElementsByClassName('sidebar')[0];
     

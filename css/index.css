@@ -263,6 +263,9 @@ header {
     cursor:pointer;
 
 }
+.toggle-btn span.scrolle {
+    background-color: #21857c;
+}
 .sidebar form {
     display: flex;
     align-items: center;
@@ -296,7 +299,7 @@ input::placeholder {
 .navbar {
     /* width: 100%; */
     margin: 0;
-    background-color: #1d8179;
+    background-color: /**#1d8179**/ transparent;
     padding: 10px 50px 10px 100px;
     display: flex;
     align-items: center;
@@ -310,6 +313,9 @@ input::placeholder {
 }
 .navbar ul {
     display: none;
+}
+.navbar.scrolled {
+    background-color: #1d8179;
 }
 
 /****JOMBOTRON MOBILE STYLING******/
@@ -419,13 +425,17 @@ button:hover
     width: 300px;
     font-weight: bold;
 }
-.Description2 ul li progress
+.Description2 li progress
 {
     padding: 0 0 0 0;
     margin: 0;
     background-color: red;
     width: 300px;
+    height: 20px;
     /* color: #077c72; */
+}
+.Description2 progress::-webkit-progress-value {
+    background-color: #21857c;
 }
 
 /******** FOOTER MOBILE STYLING **********/
@@ -433,11 +443,11 @@ footer
 {
     background-color: #000000;
     color: white;
-    padding: 20px;
+    padding: 10px;
 }
 footer form
 {
-    padding: 50px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -448,8 +458,8 @@ footer form h3
 }
 footer form input
 {
-    margin: 10px 100px;
-    padding: 10px;
+    margin: 10px 40px;
+    padding: 10px 10px;
     background-color: #161515;
     color: aliceblue;
     border-radius: 5px;
@@ -462,7 +472,7 @@ footer form input::placeholder
 footer form .message
 {
     width: 100%;
-    height: 200px;
+    height: 150px;
     padding: 0;
     background-color: #161515;
     color: aliceblue;
