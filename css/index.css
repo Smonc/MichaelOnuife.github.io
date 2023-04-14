@@ -55,7 +55,7 @@ h1
     background:url(../image/laptop-in-a-dark-room2.jpg);
     background-size: 100% 700px;
     background-repeat: no-repeat;
-    color: aqua;
+    color: rgb(5, 255, 255);
     height: 500px;
     padding: 110px 0 100px 0;
 }
@@ -149,6 +149,64 @@ footer
     background-color: #000000;
     color: white;
     padding: 20px;
+}
+footer form
+{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+footer form h3
+{
+    color: aqua;
+}
+footer form input
+{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    background-color: #161515;
+    color: aliceblue;
+    border-radius: 5px;
+    width: 22.5%;
+}
+footer .form2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+footer .form4 
+{
+    display: flex;
+    justify-content: left;
+    margin-left: 24%;
+}
+footer form input.submit::-webkit-value
+{
+    color: gray;
+    margin-top: 0;
+}
+footer form input::placeholder
+{
+    color: gray;
+    margin-top: 0;
+}
+footer form .message
+{
+    width: 50%;
+    height: 150px;
+    padding: 0;
+    background-color: #161515;
+    color: aliceblue;
+    /* font-size: 15px; */
+}
+footer form .submit:hover {
+    background-color: #1d8179;
+    cursor: pointer;
 }
 .footerli
 {
@@ -257,7 +315,7 @@ header {
 .toggle-btn span{
     width: 30px; 
     height:3px; 
-    background-color: black;
+    background-color: whitesmoke;
     margin: 5px;
     display: block;
     cursor:pointer;
@@ -308,7 +366,7 @@ input::placeholder {
     height: 40px;
 }
 .navbar h1 {
-    margin: 0;
+    margin: 0 0 0 60%;
     font-size: 20px;
 }
 .navbar ul {
@@ -323,7 +381,7 @@ input::placeholder {
     background:url(../image/laptop-in-a-dark-room2.jpg);
     background-size: 100% 690px;
     background-repeat: no-repeat;
-    color: aqua;
+    color: rgb(25, 226, 226);
     height: 450px;
     padding: 110px 20px 100px 20px;
 }
