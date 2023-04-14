@@ -382,7 +382,7 @@ input::placeholder {
     background-size: 100% 690px;
     background-repeat: no-repeat;
     color: rgb(25, 226, 226);
-    height: 450px;
+    height: 500px;
     padding: 110px 20px 100px 20px;
 }
 .jombo1
@@ -404,10 +404,10 @@ input::placeholder {
     text-align: left;
 }
 button {
-    padding: 10px 10px;
+    padding: 15px 30px;
     margin: 90px 0 0 15px;
     background: transparent;
-    color: whitesmoke;
+    color: rgb(240, 229, 229);
     border: 3px solid #1d8179;
     box-shadow:5px solid #1d8179;
     cursor: pointer;
@@ -426,11 +426,18 @@ button:hover
 /********* ABOUT MOBILE STYLING **********/
 .About
 {
-    padding: 20px 20px 0px 20px;
+    padding: 40px 15px 0px 15px;
 }
 .About h1 {
-    font-size: 30px;
-    text-align: center;
+    text-align: left;
+    color: #15443f;
+    font-size: 20px;
+    padding: 0 0 15px 0;
+}
+.About h2{
+    color: rgb(36, 170, 170);
+    padding: 0 0 15px 0;
+    font-size: 15px;
 }
 .About p
 {
@@ -442,17 +449,23 @@ button:hover
 {
     display: block;
 
-    padding: 10px 20px 20px 20px;
+    padding: 10px 10px 20px 0px;
 }
  .Description1
 {
-    padding: 20px 10px;
+    padding: 20px 15px;
 }
 .Description1 h1
 {
-    padding: 0 0 20px 0;
-    margin: 0 0 0 0;
-    text-align: center;
+    text-align: left;
+    color: #123834;
+    font-size: 20px;
+    padding: 0 0 15px 0;
+}
+.Description1 h2{
+    color: rgb(36, 170, 170);
+    padding: 0 0 15px 0;
+    font-size: 15px;
 }
 .Description2
 {
@@ -468,7 +481,7 @@ button:hover
 .Description2 hr
 {
     padding: 0;
-    margin: 0 100px 0 165px;
+    margin: 0 0 0 38%;
     background-color: red;
     width: 120px;
 }
